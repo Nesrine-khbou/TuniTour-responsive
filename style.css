@@ -1,0 +1,131 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+  }
+body{
+  font-family: 'Roboto', sans-serif;
+}
+
+header{
+  position: fixed;
+  z-index: 9999;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+#header_options li {
+    padding-right: 1.8rem;
+    font-size: 1.5rem;
+}
+
+
+nav svg{
+    height: 3rem;
+    width: 3rem;
+    color: black;
+
+}
+
+#signUp{
+  color: white;
+  background-color: rgb(24, 84, 152);
+  padding: 0.75rem 1.75rem;
+  border-radius: 20px;
+}
+nav{
+  background: rgb(245, 245, 245);
+  height: 6rem;
+  width: 100%;
+}
+label.logo{
+  font-size: 1rem;
+  line-height: 6rem;
+  padding-left: 6rem;
+}
+nav ul{
+  float: right;
+  padding-right: 6rem;
+
+}
+nav ul li{
+  display: inline-block;
+  line-height: 6rem;
+  margin: 0 5px;
+}
+nav ul li a{
+  font-size: 1.5rem;
+  padding: 0.5rem 0.7rem;
+  border-radius: 3px;
+}
+
+
+#nav_svg_signUp li{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+}
+
+.checkbtn{
+  font-size: 2rem;
+  color: black;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+@media (max-width: 952px){
+  label.logo{
+    font-size: 1.5rem;
+    padding-left: 3rem;
+  }
+  nav ul li a{
+    font-size: 1rem;
+  }
+}
+@media (max-width: 858px){
+  .checkbtn{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: rgba(231, 231, 231, 0.653);
+    top: 6rem;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 3rem 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  a:hover,a.active{
+    background: none;
+    color: #0082e6;
+  }
+
+  #check:checked ~ ul{
+    left: 0;
+    z-index: 99999;
+  }
+}

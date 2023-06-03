@@ -1,0 +1,119 @@
+@use '../util';
+
+#activities_button{
+    background-color: rgb(24, 84, 152);
+    padding: 1rem 5rem;
+    font-size: 1.7rem;
+    color: aliceblue;
+    border-radius: 34px;
+    border-color: transparent;
+    position:relative;
+    float: right;
+    margin-right: 4rem;
+    display: block;
+    @include util.breakpoint-down(medium){
+        padding: 0.5rem 2.5rem;
+    }
+
+    @include util.breakpoint-down(small){
+        padding: 0.2rem 1.5rem;
+        margin-right: 2rem;
+    }
+}
+
+#activities{
+    width: 90%;
+    margin-top: 11rem;
+    margin-left: 6rem;
+    @include util.breakpoint-down(medium){
+        margin-top: 6rem;
+        margin-left: 3rem;
+    }
+
+    @include util.breakpoint-down(small){
+        margin-top: 6rem;
+        margin-left: 0;
+        text-align: center;
+    }
+}
+
+#activities h1{
+    color:  rgb(9, 44, 85);
+    font-weight: bold;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    @include util.breakpoint-down(medium){
+        font-size: 2.2rem;
+    }
+
+    @include util.breakpoint-down(small){
+        margin-bottom: 0;
+        font-size: 2.2rem;
+    }
+}
+
+#activities_options{
+    position: relative;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 5rem 2rem;
+    @include util.breakpoint-down(medium){
+        top: 0;
+        padding: 3rem 2rem;
+        left: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+
+    @include util.breakpoint-down(small){
+        gap: 1rem;
+        top: 2rem;
+        margin-left: 1.3rem;
+        padding-bottom: 0;
+    }
+}
+
+.act_op{
+    height: 22rem;
+    width: 18rem;
+    text-align: center;
+
+    @include util.breakpoint-down(small){
+        height: 11rem;
+        width: 9rem;
+    }
+}
+
+.act_op img{
+    object-fit: cover;
+    height: 22rem;
+    width: 18rem;
+    border-radius: 30px;
+    box-shadow: 2px 4px 8px rgba(68, 67, 67, 0.687) ;
+    @include util.breakpoint-down(medium){
+
+    }
+
+    @include util.breakpoint-down(small){
+        height: 11rem;
+        width: 9rem;
+    }
+
+}
+
+.act_descpription{
+    margin-top: -8rem;
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    @include util.breakpoint-down(medium){
+    }
+
+    @include util.breakpoint-down(small){
+        margin-top: -4rem;
+        font-size: 1.5rem;
+    }
+}

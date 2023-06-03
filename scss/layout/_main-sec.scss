@@ -1,0 +1,77 @@
+@use '../util';
+
+#main_pic{
+    background-image: url(/pics/main2.jpg);
+    background-position: center;
+    background-size:cover ;
+    height: 45rem;
+    width: 100%;
+    margin-bottom: 5rem;
+
+    @include util.breakpoint-down(medium){
+        height: 40vh;
+        margin-bottom: 2rem;
+    }
+
+    @include util.breakpoint-down(small){
+        height: 60vh;
+    }
+}
+
+#search{
+    position: relative;
+    margin: 0 auto;
+    width: 50%;
+    height:20rem;
+    top:8rem;   
+    text-align: center;
+    align-items: baseline;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    @include util.breakpoint-down(medium){
+        width: 70%;
+        top:6rem;   
+    }
+    @include util.breakpoint-down(small){
+        width: 85%;
+        top:6rem;   
+    }
+}
+
+#search input{
+    position: absolute;
+    height: 4.5rem;
+    width:100%;
+    border-color: transparent;
+    border-radius: 26px;
+ 
+    @include util.breakpoint-down(medium){
+        height: 3rem;
+    }
+}
+
+#search button{
+    position: absolute;
+    background-color: rgb(24, 84, 152);
+    padding: 0.6rem 2.8rem;
+    font-size: 1.5rem;
+    color: aliceblue;
+    border-radius: 24px;
+    border-color: transparent;
+    margin-left: 45rem;
+    margin-top: 0.6rem;
+    
+    @include util.breakpoint-down(medium){
+        padding: 0.2rem 1.4rem;
+        margin-left: 26rem;
+        margin-top: 0.3rem;
+    }
+
+    @include util.breakpoint-down(small){
+        padding: 0.2rem 1.4rem;
+        margin-left: 12rem;
+        margin-top: 0.3rem;
+    }
+} 
